@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3218400 */
+  src: url('~@/static/common/fonts/iconfont.eot?t=1646291151684'); /* IE9 */
+  src: url('~@/static/common/fonts/iconfont.eot?t=1646291151684#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('~@/static/common/fonts/iconfont.woff2?t=1646291151684') format('woff2'),
+       url('~@/static/common/fonts/iconfont.woff?t=1646291151684') format('woff'),
+       url('~@/static/common/fonts/iconfont.ttf?t=1646291151684') format('truetype'),
+       url('~@/static/common/fonts/iconfont.svg?t=1646291151684#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sudi:before {
+  content: "\e6f8";
+}
+
+.icon-zhengpinbaozhang:before {
+  content: "\e607";
+}
+
+.icon-r:before {
+  content: "\e650";
+}
+
+.icon-haiwaizhiyou:before {
+  content: "\e60a";
+}
+

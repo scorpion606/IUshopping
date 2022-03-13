@@ -1,0 +1,97 @@
+/* 宽度100% */
+.w-716{ width: 716rpx;margin-left: 17rpx;margin-right: 17rpx;}
+.w-100{ width: 100%; }
+/* flex布局 */
+.row-ac{display: flex;align-items: center;}
+.row-a-j-fc{display: flex;align-items: center;justify-content: center;flex-direction: column;}
+.row{display: flex;align-items: center;justify-content: center;}
+.row-ac-sb{display: flex;align-items: center;justify-content: space-between;}
+.flex-wrap{ flex-wrap:wrap;}
+
+
+/* 内边距 */
+  .py-4 { padding-top: 40rpx; padding-bottom: 40rpx; }
+  .pb-1 { padding-bottom: 10rpx; }
+  
+  /* 外边距 */
+  .mt-1 { margin-top: 10rpx; }
+  .mb-2 { margin-bottom: 20rpx; }
+  .mx-2{ margin-left: 20rpx; margin-right: 20rpx; }
+  .ml-2 { margin-left: 20rpx; }
+  
+  /* 文字颜色 */
+  .text-main-color{color:#FE4288;}
+  .text-white {color: #ffffff;}
+  .text-light-grey { color: #828282;}
+  .text-primary {color: #007bff;}
+  .text-hover-primary { color: #0056b3;}
+  .text-secondary {color: #6c757d;}
+  .text-hover-secondary { color: #494f54;}
+  .text-success {color: #28a745;}
+  .text-hover-success{color: #19692c;}
+  .text-info { color: #17a2b8;}
+  .text-hover-info {color: #0f6674;}
+  .text-warning {color: #ffc107;}
+  .text-hover-warning { color: #ba8b00;}
+  .text-danger { color: #dc3545;}
+  .text-hover-danger { color: #a71d2a;}
+  .text-light { color: #f8f9fa;}
+  .text-hover-light { color: #cbd3da;}
+  .text-dark { color: #343a40;}
+  .text-hover-dark{ color: #121416;}
+  .text-body { color: #212529;}
+  .text-muted { color: #6c757d;}
+  
+  .text-light-muted { color: #A9A5A0;}/* 浅灰色用在input里公共色 */
+  .text-light-black { color: rgba(0, 0, 0, 0.5);}
+  .text-light-white { color: rgba(255, 255, 255, 0.5);}
+  .text-de{text-decoration: line-through;}
+  
+  /* 背景颜色 */
+  .bg-white { background-color: #ffffff;}
+  
+  /* 字体大小*/
+  .font-s-small{ /* 小字体 */font-size: 16rpx;}
+  .font-s-1{ /* 小字体 */font-size: 22rpx;}
+  .font-s-2{ /* 常规字体大小 */font-size: 24rpx;}
+  .font-s-3{ /* 常规字体大小 */font-size: 26rpx;}
+  .font-s-4{ /* 大字体 */font-size: 28rpx;}
+  .font-s-5{ /* 超大字体 */font-size: 30rpx;}
+  .font-s-6{ /* 超大字体 */font-size: 32rpx;}
+  .font-s-7{ /* 超大字体 */font-size: 42rpx;}
+  .font-s-8{ /* 超大字体 */font-size: 60rpx;}
+  .font-s-9{ /* 超大字体 */font-size: 72rpx;}
+  .font-w{ /*超粗字体 */font-weight: bold;}
+  
+  /* 圆角 */
+  .rounded { border-radius: 12rpx;}
+  
+  /* 两行限制 */
+  .in1line {
+  	display: -webkit-box !important;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	word-break: break-all;
+  	-webkit-box-orient: vertical !important;
+  	-webkit-line-clamp: 1;
+  }
+  .in2line {
+  	display: -webkit-box !important;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	word-break: break-all;
+  	-webkit-box-orient: vertical !important;
+  	-webkit-line-clamp: 2;
+  }
+  
+  
+  
+  
+  /* 隐藏 scroll-view 组件的滚动条*/
+  ::-webkit-scrollbar {
+  	display: none;
+  	width: 0 !important;
+  	height: 0 !important;
+  	-webkit-appearance: none;
+  	background: transparent;
+  }

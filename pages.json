@@ -4,8 +4,8 @@
             "path" : "pages/home/home",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "navigationStyle":"custom",
+                "enablePullDownRefresh":true
             }
             
         }
@@ -37,10 +37,36 @@
             
         }
     ],
+    // 分包配置
+    "subPackages":[
+        
+      {
+        "root":"subpkg",
+        "pages":[{
+                    "path" : "product_details/product_details",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "商品详情",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "product_list/product_list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "商品列表",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+      }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "IU购物",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#FE4288",
 		"backgroundColor": "#F8F8F8"
 	},
   "tabBar":{
