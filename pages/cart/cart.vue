@@ -1,6 +1,6 @@
 <template>
   <view>
-    购物车
+     
   </view>
 </template>
 
@@ -8,12 +8,16 @@
   export default {
     data() {
       return {
-        
+       
       }
     },
     methods: {
       
-    }
+    },
+    onLoad() {
+     
+  }
+  
   }
 </script>
 
