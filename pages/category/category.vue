@@ -1,8 +1,11 @@
 <template>
-  <view>
+  <view >
+    <!-- 搜索区域start -->
+     <my-search @click="gotoSearch"></my-search>
+    <!-- 搜索区域end -->
     <view class="scroll-list-container">
       <!-- 左侧区域start-->
-      <scroll-view class="left-scroll-view" scroll-y   :style="{height:wh+'px'}">
+      <scroll-view class="left-scroll-view" scroll-y show-scrollbar   :style="{height:wh+'px'}">
         <block v-for="(item,index) in categoryInfo" :key="index">
         <view :class="['left-scroll-view-item',index===active?'active':'' ]" @click="changeActive(index)">{{item.categorySlogan}}</view>
         </block>
@@ -10,7 +13,7 @@
       </scroll-view>
       <!-- 左侧区域end-->
       <!-- 右侧区域start-->
-      <scroll-view class="right-scroll-view" scroll-y :scroll-top="scrollTop" :style="{height:wh+'px'}">
+      <scroll-view show-scrollbar class="right-scroll-view" scroll-y :scroll-top="scrollTop" :style="{height:wh+'px'}">
          <view class="cate-lv2" v-for="(item2, i2) in secondCategory" :key="i2">
            <!-- 二级分类标题 -->
             <view class="cate-lv2-title">/ {{item2.categoryName}} /</view>
@@ -60,13 +63,23 @@
         uni.navigateTo({
           url:"../../subpkg/product_list/product_list?cId="+cId
         })
+      },
+      // 跳转到搜索页面
+      gotoSearch(){
+        uni.navigateTo({
+          url:"../../subpkg/search/search"
+        })
       }
     
     },
     onLoad() {
       // 获取设备屏幕可用高度，并赋值给wh
       const sysInfo=uni.getSystemInfoSync()
-      this.wh=sysInfo.windowHeight
+      
+      // #ifdef MP-WEIXIN
+      this.wh=sysInfo.windowHeight-42
+      // #endif
+      this.wh=sysInfo.windowHeight-50
      
       
       // 分发请求获取一级、二级、三级分类信息
@@ -148,6 +161,7 @@
     
         text {
           font-size: 12px;
+          margin-top: 2px;
         }
       }
     }

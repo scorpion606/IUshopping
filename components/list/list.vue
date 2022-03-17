@@ -33,7 +33,7 @@
 		methods:{
 			toProduct(productId){
 				uni.navigateTo({
-					url: '/pages/product/product?productId='+productId,
+					url: "../../subpkg/product_details/product_details?pId="+productId
 				});
 			}
 		}
